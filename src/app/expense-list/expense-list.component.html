@@ -1,0 +1,6 @@
+<h3 style="text-align: center; font-weight: 300;">Expense Items</h3>
+
+<ul class="list-group">
+  <app-expense-item *ngFor="let transaction of expenseArray" [expenseItem]="transaction"  (expenseIdDeleted)="onIdDeleted($event)" (expenseItemEdited)="onItemEdited($event)"></app-expense-item>
+</ul>
+ 

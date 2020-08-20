@@ -1,0 +1,49 @@
+<div class="container-fluid bg-light">
+
+  <div class="row p-3 shadow-sm" style="font-size: 2rem;">
+
+    <div class="col-3 text-center budget-app">
+      BUDGET APP
+    </div>
+
+    <div class="col ml-auto starting-budget d-flex align-items-center justify-content-end">
+      <form class="form-inline">
+        <label for="budget-input">Enter Starting Budget:</label>
+        <input type="number" class="form-control mx-3" id="budget-input" #budgetInput autocomplete="off">
+        <button type="submit" class="btn btn-primary" (click)="setBudget()">Add</button>
+        <button type="button" class="btn btn-danger ml-4" (click)="resetApp()">Reset App</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="row banner-image" style="padding: 2.5em 0;">
+    <div class="col d-flex flex-column justify-content-center align-items-center" style="font-size: 1.3rem;">
+
+      
+        <div class="row text-center w-75 py-3" id="total-income">
+          <div class="col">
+            Total Income
+          </div>
+          <div class="col">
+            $ {{ totalIncome }}
+          </div>
+        </div>
+
+  
+        <div class="row text-center w-75 py-3" id="total-expense">
+          <div class="col">
+            Total Expense
+          </div>
+          <div class="col">
+            $ {{ totalExpense }}
+          </div>
+        </div>
+      
+      
+    </div>
+    <div class="col budget-amount d-flex justify-content-around align-items-center" [ngStyle]="{color: getColor()}">
+      $ {{ budget }}
+    </div>
+  </div>
+</div>

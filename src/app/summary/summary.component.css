@@ -1,0 +1,44 @@
+.budget-amount {
+  font-size: 5rem;
+  color: white;
+}
+
+.budget-app {
+  font-weight: 300;
+}
+
+.starting-budget {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#total-income,
+#total-expense {
+  border-radius: 40px;
+  margin: 20px;
+  color: white;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  cursor: pointer;
+}
+
+#total-income:hover,
+#total-expense:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.banner-image {
+  background-color: #f0f0f0;
+}
+
+#total-income {
+  background-color: rgba(30, 119, 18, 0.85);
+}
+
+#total-expense {
+  background-color: rgba(189, 40, 14, 0.85);
+}
+/*# sourceMappingURL=summary.component.css.map */

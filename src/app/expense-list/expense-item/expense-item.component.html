@@ -1,0 +1,27 @@
+<div class="container-fluid p-2">
+  <div class="expense-item row justify-content-around align-items-center shadow-sm py-3" style="border-radius: 10px;">
+    <div>{{ expenseItem.getDescription() }}</div>
+    <div>{{ expenseItem.getAmount() }}</div>
+    <div>
+      <div class="row">
+        <div class="col"><button class="btn btn-primary" (click)="editMode = !editMode">Edit</button></div>
+        <div class="col"><button class="btn btn-danger" (click)="deleteExpenseItem()">Delete</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row bg-light p-4 mt-1" *ngIf="editMode" style="border-radius: 10px;">
+    <form (ngSubmit)="onSubmit()" #form="ngForm" class="form-inline">
+
+
+      <input type="text" name="newExpense" class="form-control mx-2" id="edit-expense" ngModel required
+        placeholder="Enter new expense item">
+
+      <input type="number" name="newAmount" class="form-control mx-2" id="edit-amount" ngModel required
+        placeholder="Enter new amount">
+
+      <button type="submit" class="btn btn-primary mx-2 mt-2">Save Changes</button>
+    </form>
+  </div>
+
+</div>

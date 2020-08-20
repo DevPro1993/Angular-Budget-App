@@ -1,0 +1,10 @@
+.income-item {
+    background-color: rgb(240, 240, 240);
+    // color: white;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

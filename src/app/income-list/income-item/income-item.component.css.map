@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,gBAAgB,EAAE,OAAkB;EAEpC,UAAU,EAAE,mBAAmB;EAC/B,MAAM,EAAE,OAAO;CAKlB;;AATD,AAMI,YANQ,AAMP,MAAM,CAAC;EACJ,SAAS,EAAE,WAAW;CACzB",
+    "sources": [
+        "income-item.component.scss"
+    ],
+    "names": [],
+    "file": "income-item.component.css"
+}

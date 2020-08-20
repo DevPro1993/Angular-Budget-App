@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,gBAAgB,EAAE,OAAkB;EAEpC,UAAU,EAAE,mBAAmB;EAC/B,MAAM,EAAE,OAAO;CAKlB;;AATD,AAMI,aANS,AAMR,MAAM,CAAC;EACJ,SAAS,EAAE,WAAW;CACzB",
+    "sources": [
+        "expense-item.component.scss"
+    ],
+    "names": [],
+    "file": "expense-item.component.css"
+}
