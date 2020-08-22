@@ -1,5 +1,7 @@
 <h3 style="text-align: center; font-weight: 300;">Expense Items</h3>
 
+<p *ngIf="expenseArray.length === 0" class="text-center py-3" style="color: rgba(0, 0, 0, 0.7)">Add expense item above to display here</p>
+
 <ul class="list-group">
   <app-expense-item *ngFor="let transaction of expenseArray" [expenseItem]="transaction"  (expenseIdDeleted)="onIdDeleted($event)" (expenseItemEdited)="onItemEdited($event)"></app-expense-item>
 </ul>

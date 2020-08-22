@@ -1,19 +1,17 @@
-<div class="container-fluid p-2">
-  <div class="expense-item row justify-content-around align-items-center shadow-sm py-3" style="border-radius: 10px;">
+<div class="container-fluid p-1">
+  <div class="expense-item row justify-content-around align-items-center shadow py-2" style="border-radius: 10px;">
     <div>{{ expenseItem.getDescription() }}</div>
     <div>{{ expenseItem.getAmount() }}</div>
     <div>
       <div class="row">
-        <div class="col"><button class="btn btn-primary" (click)="editMode = !editMode">Edit</button></div>
-        <div class="col"><button class="btn btn-danger" (click)="deleteExpenseItem()">Delete</button></div>
+        <div class="col"><button class="btn btn-primary btn-sm" (click)="editMode = !editMode">Edit</button></div>
+        <div class="col"><button class="btn btn-danger btn-sm" (click)="deleteExpenseItem()">Delete</button></div>
       </div>
-    </div>
+    </div> 
   </div>
 
   <div class="row bg-light p-4 mt-1" *ngIf="editMode" style="border-radius: 10px;">
     <form (ngSubmit)="onSubmit()" #form="ngForm" class="form-inline">
-
-
       <input type="text" name="newExpense" class="form-control mx-2" id="edit-expense" ngModel required
         placeholder="Enter new expense item">
 

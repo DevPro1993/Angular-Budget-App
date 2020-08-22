@@ -1,5 +1,7 @@
 <h3 style="text-align: center; font-weight: 300;">Income Items</h3>
 
+<p *ngIf="incomeArray.length === 0" class="text-center py-3" style="color: rgba(0, 0, 0, 0.7)">Add income item above to display here</p>
+
 <ul class="list-group">
   <app-income-item *ngFor="let transaction of incomeArray" [incomeItem]="transaction" (incomeIdDeleted)="onIdDeleted($event)" (incomeItemEdited)="onItemEdited($event)">
   </app-income-item>

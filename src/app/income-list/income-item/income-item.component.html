@@ -1,11 +1,11 @@
-<div class="container-fluid p-2">
-  <div class="income-item row justify-content-around align-items-center shadow-sm py-3" style="border-radius: 10px;">
+<div class="container-fluid p-1">
+  <div class="income-item row justify-content-around align-items-center shadow py-2" style="border-radius: 10px;">
     <div>{{ incomeItem.getDescription() }}</div>
     <div>{{ incomeItem.getAmount() }}</div>
-    <div>
+    <div> 
       <div class="row">
-        <div class="col"><button class="btn btn-primary" (click)="editMode = !editMode">Edit</button></div>
-        <div class="col"><button class="btn btn-danger" (click)="deleteIncomeItem()">Delete</button></div>
+        <div class="col"><button class="btn btn-primary btn-sm" (click)="editMode = !editMode">Edit</button></div>
+        <div class="col"><button class="btn btn-danger btn-sm" (click)="deleteIncomeItem()">Delete</button></div>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <div class="container-fluid bg-light">
 
-  <div class="row p-3 shadow-sm" style="font-size: 2rem;">
+  <div class="row p-3 shadow-lg" style="font-size: 2rem;">
 
     <div class="col-3 text-center budget-app">
       BUDGET APP
@@ -9,9 +9,18 @@
     <div class="col ml-auto starting-budget d-flex align-items-center justify-content-end">
       <form class="form-inline">
         <label for="budget-input">Enter Starting Budget:</label>
-        <input type="number" class="form-control mx-3" id="budget-input" #budgetInput autocomplete="off">
-        <button type="submit" class="btn btn-primary" (click)="setBudget()">Add</button>
-        <button type="button" class="btn btn-danger ml-4" (click)="resetApp()">Reset App</button>
+
+
+        <div class="input-group">
+          <div class="input-group-prepend ml-3">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="number" class="form-control mr-3" id="budget-input" #budgetInput autocomplete="off">
+        </div>
+
+
+        <button type="submit" class="btn btn-outline-primary" (click)="setBudget()">Add</button>
+        <button type="button" class="btn btn-outline-danger ml-4" (click)="resetApp()">Reset App</button>
       </form>
     </div>
   </div>

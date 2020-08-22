@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IncomeListComponent implements OnInit {
 
-  incomeArray: Transaction[];
+  incomeArray: Transaction[] = [];
 
   constructor(private trasactionsService: TransactionsService) { }
 
   ngOnInit(): void {
     this.trasactionsService.incomeListChanged.subscribe(data => {
       this.incomeArray = data;
-    })
+    });
   }
 
   // Get the id passed on by income item component and call a method to delete it in trasnactions service

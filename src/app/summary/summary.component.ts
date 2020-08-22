@@ -47,7 +47,7 @@ export class SummaryComponent implements OnInit {
     } else if (this.budget > 0) {
       return 'rgba(30, 119, 18, 0.85)';
     } else {
-      return 'black';
+      return 'rgba(0, 0, 0, 0.7)';
     }
   }
 

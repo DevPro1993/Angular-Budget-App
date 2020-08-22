@@ -9,7 +9,7 @@ import { TransactionsService } from '../transactions.service';
 }) 
 export class ExpenseListComponent implements OnInit {
 
-  expenseArray: Transaction[];
+  expenseArray: Transaction[] = [];
 
   constructor(private trasactionsService: TransactionsService) { }
 
