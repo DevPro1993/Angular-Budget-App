@@ -1,5 +1,7 @@
 # BudgetApp 
 
+![](./assets/budget-app.gif)
+
 A simple personal finance and budget app built using Angular. Add a starting budget followed by your expenses and incomes to keep a track of your spending habits
 
 ## Development server
